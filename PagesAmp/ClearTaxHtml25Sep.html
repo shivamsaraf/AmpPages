@@ -1,0 +1,451 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <style>
+
+    @media only screen and (max-width: 600px) {
+      body {
+        margin: 0;
+      }
+
+      .table-sm {
+        width: 100% !important;
+      }
+    }
+
+    .content {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    img {
+      border: none;
+      -ms-interpolation-mode: bicubic;
+      max-width: 100%;
+    }
+
+    body {
+      font-family: Helvetica, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      font-size: 14px;
+      line-height: 1.4;
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+      margin: 0 auto;
+    }
+
+    table {
+      border-collapse: separate;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+      width: 100%;
+    }
+
+    table td {
+      font-family: Helvetica, sans-serif;
+      font-size: 14px;
+      vertical-align: top;
+    }
+
+    /* -------------------------------------
+    BODY & CONTAINER
+    ------------------------------------- */
+
+    body {
+      background-color: #f6f6f6;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header > table {
+      min-width: 100%;
+    }
+
+    .footer td,
+    .footer p,
+    .footer span,
+    .footer a {
+      color: #999999;
+      font-size: 12px;
+      text-align: center;
+    }
+
+    /* -------------------------------------
+    TYPOGRAPHY
+    ------------------------------------- */
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      color: #222222;
+      font-family: Helvetica, sans-serif;
+      font-weight: 400;
+      line-height: 1.4;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: 300;
+      margin-bottom: 24px;
+      text-align: center;
+      text-transform: capitalize;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 16px;
+    }
+
+    h3 {
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+
+    h4 {
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    p,
+    ul,
+    ol {
+      font-family: Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: normal;
+      margin: 0;
+      margin-bottom: 16px;
+    }
+
+    p li,
+    ul li,
+    ol li {
+      list-style-position: outside;
+      margin-left: 16px;
+      padding: 0;
+      text-indent: 0;
+    }
+
+    ul,
+    ol {
+      margin-left: 8px;
+      padding: 0;
+      text-indent: 0;
+    }
+
+    a {
+      color: #3498db;
+      text-decoration: underline;
+    }
+
+    /* -------------------------------------
+    BUTTONS
+    ------------------------------------- */
+
+    .btn > tbody > tr > td {
+      padding-bottom: 16px;
+    }
+
+    .btn table {
+      width: auto;
+    }
+
+    .btn table td {
+      background-color: #ffffff;
+      border-radius: 4px;
+      text-align: center;
+    }
+
+    .btn a, .btn button {
+      background-color: #ffffff;
+      border: solid 2px #3498db;
+      border-radius: 4px;
+      box-sizing: border-box;
+      color: #3498db;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: bold;
+      margin: 0;
+      padding: 12px 24px;
+      text-decoration: none;
+      text-transform: capitalize;
+    }
+
+    .btn-primary table td {
+      background-color: #3498db;
+    }
+
+    .btn-primary a, .btn-primary button {
+      background-color: #ee5291;
+      border-color: #ee5291;
+      color: #ffffff;
+    }
+
+    @media all {
+      .btn-primary table td:hover {
+        background-color: #ae2bca;
+      }
+
+      .btn-primary a:hover, .btn-primary button:hover {
+        background-color: #ae2bca;
+        border-color: #ae2bca;
+      }
+    }
+
+    .btn-secondary table td {
+      background-color: transparent;
+    }
+
+    .btn-secondary a {
+      background-color: transparent;
+      border-color: #3498db;
+      color: #3498db;
+    }
+
+    @media all {
+      .btn-secondary a:hover {
+        border-color: #34495e;
+        color: #34495e;
+      }
+    }
+
+    .btn-tertiary table td {
+      background-color: transparent;
+    }
+
+    .btn-tertiary a {
+      background-color: transparent;
+      border-color: #ffffff;
+      color: #ffffff;
+    }
+
+    .powered-by a {
+      text-decoration: none;
+    }
+
+    .hr tr:first-of-type td,
+    .hr tr:last-of-type td {
+      height: 24px;
+      line-height: 24px;
+    }
+
+    .hr tr:nth-of-type(2) td {
+      background-color: #f6f6f6;
+      height: 1px;
+      line-height: 1px;
+      width: 100%;
+    }
+
+    /* -------------------------------------
+    RESPONSIVE AND MOBILE FRIENDLY STYLES
+    ------------------------------------- */
+
+    @media only screen and (max-width: 640px) {
+      h1 {
+        font-size: 36px;
+        margin-bottom: 16px;
+      }
+
+      h2 {
+        font-size: 28px;
+        margin-bottom: 8px;
+      }
+
+      h3 {
+        font-size: 22px;
+        margin-bottom: 8px;
+      }
+
+      .main p,
+      .main ul,
+      .main ol,
+      .main td,
+      .main span {
+        font-size: 16px;
+      }
+
+      .btn table {
+        max-width: 100%;
+        width: 100%;
+      }
+
+      .btn a {
+        font-size: 16px;
+        max-width: 100%;
+        width: 100%;
+      }
+
+      .alert td {
+        border-radius: 0;
+        font-size: 16px;
+        padding-bottom: 16px;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 16px;
+      }
+
+      .hr tr:first-of-type td,
+      .hr tr:last-of-type td {
+        height: 16px;
+        line-height: 16px;
+      }
+
+      .form-group input {
+        outline: none;
+        display: block;
+        background: rgba(0, 0, 0, 0.1);
+        width: 100%;
+        border: 0;
+        border-radius: 4px;
+        box-sizing: border-box;
+        padding: 12px 20px;
+        color: rgba(0, 0, 0, 0.6);
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: 500;
+        line-height: inherit;
+        transition: 0.3s ease;
+      }
+
+      .form {
+        z-index: 15;
+        position: relative;
+        background: #ff3047;
+        width: 600px;
+        border-radius: 4px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+        margin: 100px auto 10px;
+        overflow: hidden;
+      }
+
+      .form-group input:focus {
+        color: rgba(0, 0, 0, 0.8);
+      }
+    }
+
+    /* -------------------------------------
+    PRESERVE THESE STYLES IN THE HEAD
+    ------------------------------------- */
+
+    @media all {
+      .apple-link a {
+        color: inherit;
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+        text-decoration: none;
+      }
+
+      #MessageViewBody a {
+        color: inherit;
+        text-decoration: none;
+        font-size: inherit;
+        font-family: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+      }
+    }
+  </style>
+</head>
+<body>
+<table class="table-sm content" cellpadding="0" cellspacing="0" align="center" border="0"
+       style="width:100%;background:#fff;border:solid 1px #eaeaea">
+  <tr>
+    <td width="100%">
+      <table bgcolor="#e6faff" width="100%" align="center" cellspacing="0" cellpadding="0">
+        <tr>
+          <td align="center">
+            <img src="https://s3.us-east-2.amazonaws.com/preparevocab.com/ClearTax.PNG" width="300px" height="80px"
+                 class="header-banner">
+          </td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td style="font-family:Arial,Helvetica;color:#333333;font-size:14px;line-height:22px;padding:20px 5% 0px 5%">
+      Dear Valued Associate,
+    </td>
+  </tr>
+  <tr>
+    <td style="font-family:Arial,Helvetica;color:#333333;font-size:14px;line-height:22px;padding:20px 5% 0px 5%">
+      The New GST return is around the corner. To help you understand the flow of process better,
+      we are organizing a webinar on the <b>25th September 2019 (Wednesday) at 3 pm</b>. This 45-minute-long webinar on
+      "Prepare for New GST Return" will cover the following points:
+    </td>
+  </tr>
+  <tr>
+    <td style="font-family:Arial,Helvetica;color:#333333;font-size:14px;line-height:22px;padding:20px 5% 0px 5%">
+      🔸 Preparing for issues which you might face while filing New GST Return<br>
+      🔸 How ClearTax will help you resolve the issues
+    </td>
+  </tr>
+  <tr>
+    <td style="padding-top:20px;" align="center">
+      <div
+        style="background-color:#f06e23;padding:10px 20px;color:#ffffff;border-radius:4px;text-align:center;font-size:14px;display:inline-block">
+        <a style="display:block;color:#ffffff;text-decoration:none;font-weight:bold"
+           href="https://my.demio.com/ref/lJqdTNdBUaqdWZPc"
+           target="_blank"> Register FREE For Webinar
+        </a>
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td style="font-family:Arial,Helvetica;color:#333333;font-size:14px;line-height:22px;padding:20px 5% 0px 5%">
+      During the webinar, our GST expert will cover:
+    </td>
+  </tr>
+  <tr>
+    <td style="font-family:Arial,Helvetica;color:#333333;font-size:14px;line-height:22px;padding:10px 5% 0px 5%;">
+      <ul style="margin-top:0px;margin-bottom:0px">
+        <li style="padding-bottom:8px;">Selection of Return Type- Sahaj vs Sugam vs Normal return
+          returns?
+        </li>
+        <li style="padding-bottom:8px">Transition Planning
+        </li>
+        <li style="padding-bottom:8px">Vendor Communication & Education
+        </li>
+        <li style="padding-bottom:8px">Frequent Matching/reconciliation
+        </li>
+        </li>
+        <li style="padding-bottom:8px">Tracking supplier invoices and claiming ITC on a provisional basis
+        </li>
+        <li style="padding-bottom:8px">Actions required on credit claimed on missing supplier invoices
+        </li>
+        <li style="padding-bottom:8px">ERP/IT configurations due to workflow changes
+        </li>
+        <li style="padding-bottom:8px">.. and many more
+        </li>
+      </ul>
+    </td>
+  </tr>
+
+  <tr>
+    <td style="font-family:Arial,Helvetica;color:#333333;font-size:14px;line-height:22px;padding:20px 5% 20px 5%">
+      See you there!
+      <br>Team ClearTax
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="#" target="_blank">
+        <img
+          src="https://assets1.cleartax-cdn.com/s/img/2019/08/06144449/GST-webinar-mailer_GST-Weninar-mailer-footer.png"
+          width="600" height="200" class="header-banner">
+      </a>
+    </td>
+  </tr>
+
+</table>
+</body>
+</html>

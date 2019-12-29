@@ -1,0 +1,508 @@
+<!doctype html>
+<html ⚡4email>
+<head>
+  <meta charset="utf-8">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+  <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+  <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+  <style amp4email-boilerplate>body {
+    visibility: hidden
+  }</style>
+  <style amp-custom>
+    img {
+      border: none;
+      -ms-interpolation-mode: bicubic;
+      max-width: 100%;
+    }
+
+    .content {
+      max-width: 600px;
+      margin: auto;
+    }
+    .content1 {
+            display: none;
+        }
+        .a .with-a {
+            display: block;
+        }
+        .a1 .with-a1 {
+            display: block;
+        }
+
+    body {
+      font-family: Helvetica, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      font-size: 14px;
+      line-height: 1.4;
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+      margin: 0 auto;
+    }
+
+    table {
+      border-collapse: separate;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+      width: 100%;
+    }
+
+    table td {
+      font-family: Helvetica, sans-serif;
+      font-size: 14px;
+      vertical-align: top;
+    }
+
+    /* -------------------------------------
+        BODY & CONTAINER
+        ------------------------------------- */
+
+    body {
+      background-color: #f6f6f6;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header > table {
+      min-width: 100%;
+    }
+
+    .footer td,
+    .footer p,
+    .footer span,
+    .footer a {
+      color: #999999;
+      font-size: 12px;
+      text-align: center;
+    }
+
+    /* -------------------------------------
+        TYPOGRAPHY
+        ------------------------------------- */
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      color: #222222;
+      font-family: Helvetica, sans-serif;
+      font-weight: 400;
+      line-height: 1.4;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: 300;
+      margin-bottom: 24px;
+      text-align: center;
+      text-transform: capitalize;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 16px;
+    }
+
+    h3 {
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+
+    h4 {
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    p,
+    ul,
+    ol {
+      font-family: Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: normal;
+      margin: 0;
+      margin-bottom: 16px;
+    }
+
+    p li,
+    ul li,
+    ol li {
+      list-style-position: outside;
+      margin-left: 16px;
+      padding: 0;
+      text-indent: 0;
+    }
+
+    ul,
+    ol {
+      margin-left: 8px;
+      padding: 0;
+      text-indent: 0;
+    }
+
+    a {
+      color: #3498db;
+      text-decoration: underline;
+    }
+
+    /* -------------------------------------
+        BUTTONS
+        ------------------------------------- */
+
+    .btn > tbody > tr > td {
+      padding-bottom: 16px;
+    }
+
+    .btn table {
+      width: auto;
+    }
+
+    .btn table td {
+      background-color: #ffffff;
+      border-radius: 4px;
+      text-align: center;
+    }
+
+    .btn a, .btn button {
+      background-color: #ffffff;
+      border: solid 2px #3498db;
+      border-radius: 4px;
+      box-sizing: border-box;
+      color: #3498db;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: bold;
+      margin: 0;
+      padding: 12px 24px;
+      text-decoration: none;
+      text-transform: capitalize;
+    }
+
+    .btn-primary table td {
+      background-color: #3498db;
+    }
+
+    .btn-primary a, .btn-primary button {
+      background-color: #ee5291;
+      border-color: #ee5291;
+      color: #ffffff;
+    }
+
+    @media all {
+      .btn-primary table td:hover {
+        background-color: #ae2bca;
+      }
+
+      .btn-primary a:hover, .btn-primary button:hover {
+        background-color: #ae2bca;
+        border-color: #ae2bca;
+      }
+    }
+
+    .btn-secondary table td {
+      background-color: transparent;
+    }
+
+    .btn-secondary a {
+      background-color: transparent;
+      border-color: #3498db;
+      color: #3498db;
+    }
+
+    @media all {
+      .btn-secondary a:hover {
+        border-color: #34495e;
+        color: #34495e;
+      }
+    }
+
+    .btn-tertiary table td {
+      background-color: transparent;
+    }
+
+    .btn-tertiary a {
+      background-color: transparent;
+      border-color: #ffffff;
+      color: #ffffff;
+    }
+
+    .powered-by a {
+      text-decoration: none;
+    }
+
+    .hr tr:first-of-type td,
+    .hr tr:last-of-type td {
+      height: 24px;
+      line-height: 24px;
+    }
+
+    .hr tr:nth-of-type(2) td {
+      background-color: #f6f6f6;
+      height: 1px;
+      line-height: 1px;
+      width: 100%;
+    }
+
+    /* -------------------------------------
+        RESPONSIVE AND MOBILE FRIENDLY STYLES
+        ------------------------------------- */
+
+    @media only screen and (max-width: 640px) {
+      h1 {
+        font-size: 36px;
+        margin-bottom: 16px;
+      }
+
+      h2 {
+        font-size: 28px;
+        margin-bottom: 8px;
+      }
+
+      h3 {
+        font-size: 22px;
+        margin-bottom: 8px;
+      }
+
+      .main p,
+      .main ul,
+      .main ol,
+      .main td,
+      .main span {
+        font-size: 16px;
+      }
+
+      .btn table {
+        max-width: 100%;
+        width: 100%;
+      }
+
+      .btn a {
+        font-size: 16px;
+        max-width: 100%;
+        width: 100%;
+      }
+
+      .alert td {
+        border-radius: 0;
+        font-size: 16px;
+        padding-bottom: 16px;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 16px;
+      }
+
+      .hr tr:first-of-type td,
+      .hr tr:last-of-type td {
+        height: 16px;
+        line-height: 16px;
+      }
+
+      .form-group input {
+        outline: none;
+        display: block;
+        background: rgba(0, 0, 0, 0.1);
+        width: 100%;
+        border: 0;
+        border-radius: 4px;
+        box-sizing: border-box;
+        padding: 12px 20px;
+        color: rgba(0, 0, 0, 0.6);
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: 500;
+        line-height: inherit;
+        transition: 0.3s ease;
+      }
+
+      .form {
+        z-index: 15;
+        position: relative;
+        background: #ff3047;
+        width: 600px;
+        border-radius: 4px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+        margin: 100px auto 10px;
+        overflow: hidden;
+      }
+
+      .form-group input:focus {
+        color: rgba(0, 0, 0, 0.8);
+      }
+    }
+    button{
+      user-select: none;      white-space: pre;      align-items: flex-start;      text-align: center;
+                 cursor: default;      color: #ffffff;      background-color: #00a2ff;      box-sizing: border-box;
+            padding: 10px 40px;      border-width: 2px;      border-style: outset;      border-color: #00a2ff;
+            border-image: initial; margin-top: 8px;"
+    }
+
+    /* -------------------------------------
+        PRESERVE THESE STYLES IN THE HEAD
+        ------------------------------------- */
+
+    @media all {
+      .apple-link a {
+        color: inherit;
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+        text-decoration: none;
+      }
+
+      #MessageViewBody a {
+        color: inherit;
+        text-decoration: none;
+        font-size: inherit;
+        font-family: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+      }
+    }
+  </style>
+
+  <!--[if gte mso 9]>
+  <xml>
+    <o:OfficeDocumentSettings>
+      <o:AllowPNG/>
+      <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+  </xml>
+  <![endif]-->
+  <!--
+    _     _             _                      _ _   _
+    | |   | |           | |                    (_) | (_)
+    | |__ | |_ _ __ ___ | | ___ _ __ ___   __ _ _| |  _  ___
+    | '_ \| __| '_ ` _ \| |/ _ \ '_ ` _ \ / _` | | | | |/ _ \
+    | | | | |_| | | | | | |  __/ | | | | | (_| | | |_| | (_) |
+    |_| |_|\__|_| |_| |_|_|\___|_| |_| |_|\__,_|_|_(_)_|\___/
+    -->
+</head>
+<body class="a" [class]="globalState.join(' ')">
+  <amp-state id="globalState">
+        <script type="application/json">
+            ["a"]
+        </script>
+    </amp-state>
+    <amp-bind-macro id="toggle" arguments="value"
+        expression="globalState.includes(value) ? globalState.map(x => x+1): globalState.concat(value)" />
+<table class="table-sm content" cellpadding="0" cellspacing="0" align="center" border="0"
+     style="width:100%;background:#fff;border:solid 1px #eaeaea">
+  <tr>
+    <td width="100%">
+      <table bgcolor="#e6faff" width="100%" align="center" cellspacing="0" cellpadding="0">
+        <tr>
+          <td align="center">
+            <amp-img src="https://s3.us-east-2.amazonaws.com/preparevocab.com/ClearTax.PNG" width="300"
+                 height="80"
+                 alt="AMP"></amp-img>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td style="font-family:Arial,Helvetica;color:#333333;font-size:14px;line-height:22px;padding:20px 5% 0px 5%">
+      Dear Valued Associate,
+    </td>
+  </tr>
+  <tr>
+    <td style="font-family:Arial,Helvetica;color:#333333;font-size:14px;line-height:22px;padding:20px 5% 0px 5%">
+      The New GST return is around the corner. To help you understand the flow of process better,
+      we are organizing a webinar on the <b>25th September 2019 (Wednesday) at 3 pm</b>. This 45-minute-long
+      webinar on
+      "Prepare for New GST Return" will cover the following points:
+    </td>
+  </tr>
+  <tr>
+    <td style="font-family:Arial,Helvetica;color:#333333;font-size:14px;line-height:22px;padding:20px 5% 0px 5%">
+      🔸 Preparing for issues which you might face while filing New GST Return<br>
+      🔸 How ClearTax will help you resolve the issues
+    </td>
+  </tr>
+  <tr>
+    <td style="padding-top:20px;" align="center">
+      <form method="post" action-xhr="https://helpless-mole-65.localtunnel.me/save1">
+         <div class="content1 with-a">
+       <input style="user-select: none;      white-space: pre;      align-items: flex-start;
+                 cursor: default; color: buttontext; box-sizing: border-box;      padding: 5px 8px;
+                 border-width: 2px; border-style: outset;      border-color: #000000;
+                 border-image: initial;      margin-top: 8px;" type="text" name="name" placeholder="Name" required>
+        <input style="user-select: none; white-space: pre;      align-items: flex-start;
+              cursor: default;      color: buttontext;   padding: 5px 8px;
+               border-width: 2px;      border-style: outset;      border-color: #000000;
+               border-image: initial;      margin-left: 8px;" type="tel" name="name1" placeholder="Phone Number"
+             required>
+        <input style="user-select: none; white-space: pre;      align-items: flex-start; cursor: default;color: buttontext;
+            box-sizing: border-box;padding: 5px 8px; border-width: 2px; border-style: outset;
+            border-color: #000000; border-image: initial;margin-left: 8px;" type="email" name="rating"
+             placeholder="Email" required>
+        <button type="submit" value="SUBMIT"  on="tap:AMP.setState({ globalState: toggle('a') })" aria-expanded="true"
+                  [aria-expanded]="[globalState.includes('a')]">SUBMIT</button>
+      </div>
+
+        <div class="content1 with-a1">
+          <div submit-success>
+          <template type="amp-mustache">
+            <br>Success! Thanks {{name}} for registering. Your seat is confirmed.
+          </template>
+        </div>
+        <div submit-error>
+          <template type="amp-mustache">
+            <br>Fail
+          </template>
+        </div>
+       </div>
+          
+      </form>
+  </tr>
+
+  <tr>
+    <td style="font-family:Arial,Helvetica;color:#333333;font-size:14px;line-height:22px;padding:20px 5% 0px 5%">
+      During the webinar, our GST expert will cover:
+    </td>
+  </tr>
+  <tr>
+    <td style="font-family:Arial,Helvetica;color:#333333;font-size:14px;line-height:22px;padding:10px 5% 0px 5%;">
+      <ul style="margin-top:0px;margin-bottom:0px">
+        <li style="padding-bottom:8px;">Selection of Return Type- Sahaj vs Sugam vs Normal return
+          returns?
+        </li>
+        <li style="padding-bottom:8px">Transition Planning
+        </li>
+        <li style="padding-bottom:8px">Vendor Communication & Education
+        </li>
+        <li style="padding-bottom:8px">Frequent Matching/reconciliation
+        </li>
+        </li>
+        <li style="padding-bottom:8px">Tracking supplier invoices and claiming ITC on a provisional basis
+        </li>
+        <li style="padding-bottom:8px">Actions required on credit claimed on missing supplier invoices
+        </li>
+        <li style="padding-bottom:8px">ERP/IT configurations due to workflow changes
+        </li>
+        <li style="padding-bottom:8px">.. and many more
+        </li>
+      </ul>
+    </td>
+  </tr>
+
+  <tr>
+    <td style="font-family:Arial,Helvetica;color:#333333;font-size:14px;line-height:22px;padding:20px 5% 20px 5%">
+      See you there!
+      <br>Team ClearTax
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <amp-img
+        src="https://assets1.cleartax-cdn.com/s/img/2019/08/06144449/GST-webinar-mailer_GST-Weninar-mailer-footer.png"
+        width="600" height="200" class="header-banner"></amp-img>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
